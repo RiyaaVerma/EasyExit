@@ -1,0 +1,177 @@
+/* Status.css
+.status {
+    margin-top: 30px;
+  }
+  
+  .status h2 {
+    margin-bottom: 20px;
+  }
+  
+  .status-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .detail {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .value {
+    font-style: italic;
+  }
+  
+  .status-accepted {
+    color: green;
+  }
+  
+  .status-rejected {
+    color: red;
+  }
+  .accepted-btn{
+    background-color: green;
+  }
+  .rejected-btn{
+    background-color: red;
+  }
+  .pending-btn{
+    background-color: blue;
+  } */
+
+
+
+  /* Status.css */
+.status-container {
+  margin: auto;
+  width: 50%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.status-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 15px;
+  /* border: 1px solid red; */
+}
+
+.detail {
+  width: 40%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  text-align: left;
+  margin: auto;
+  margin-top: 15px;
+}
+.detail1 {
+  width: 90%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  text-align: left;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  margin-left: 5px;
+}
+
+.status-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.status-accepted {
+  background-color: green;
+  color: white;
+}
+
+.status-rejected {
+  background-color: red;
+  color: white;
+}
+
+.status-pending {
+  background-color: blue;
+  color: white;
+}
+button{
+  border-radius: 10px;
+}
+
+@media screen and (max-width:450px) {
+  .status-container{
+    width: 70%;
+  }
+  .detail{
+    width: 90%;
+  }
+}
+
+/* Status.css */
+/* .status-container {
+  margin: auto;
+  width: 50%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.status-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.label {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.value {
+  margin-left: 10px;
+}
+
+.status-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.status-accepted {
+  background-color: green;
+  color: white;
+}
+
+.status-rejected {
+  background-color: red;
+  color: white;
+}
+
+.status-pending {
+  background-color: blue;
+  color: white;
+} */
