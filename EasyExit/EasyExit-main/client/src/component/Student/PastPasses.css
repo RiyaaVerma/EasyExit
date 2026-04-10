@@ -1,0 +1,60 @@
+.past-passes {
+    margin-top: 40px;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-collapse: collapse;
+  }
+  
+  thead tr, tbody tr{  
+    border-radius: 20px;
+    border-spacing: 0 20px;
+  }
+
+  tr{
+    margin: 20px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 30px;
+    text-align: left;
+  }
+  
+  /* thead th {
+    background-color: #f0f0f0;
+  } */
+  
+  .even-row {
+    background-color: #f9f9f9;
+  }
+  
+  .odd-row {
+    background-color: #f0f0f0;
+  }
+  
+  .status-icon {
+    color: green;
+  }
+  
+  .status-icon::before {
+    content: '';
+  }
+  
+  .status-icon.rejected {
+    color: red;
+  }
+  @media screen and (max-width:450px){
+    table{
+        width: 100%;
+    }
+    thead th,
+  tbody td {
+    padding: 16px;
+    text-align: left;
+    font-size: 12px;
+  }
+  }
