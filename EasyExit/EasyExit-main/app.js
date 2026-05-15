@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
     cors({
-        origin: ["http://localhost:3000"],
+        origin: ["http://localhost:3000","https://easyexitfrontendfinal.onrender.com"],
   credentials: true
     }));
 
@@ -31,7 +31,7 @@ import guardRoutes from './src/routes/guard.routes.js';
 app.use('/guard', guardRoutes);
 
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
     res.send("Hello World");
 });
 

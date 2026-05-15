@@ -23,7 +23,7 @@ const PendingPassesSlider = () => {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
           'Content-Type': 'application/json',
         };
-        const data = await axios.get('http://localhost:5000/admin',{headers});
+        const data = await axios.get('https://easyexitbackend.onrender.com/admin',{headers});
         setPendingPasses(data.data.data);
         // console.log(data.data.data)
       } catch (error) {
@@ -46,7 +46,7 @@ const PendingPassesSlider = () => {
           id : id
         }
         const data = await axios.post(
-            'http://localhost:5000/admin',
+            'https://easyexitbackend.onrender.com/admin',
             body,
             { headers }
           );
@@ -78,7 +78,7 @@ const PendingPassesSlider = () => {
           id : id,
           reason : reason
         };
-        const data = await axios.post('http://localhost:5000/admin',body,{headers});
+        const data = await axios.post('https://easyexitbackend.onrender.com/admin',body,{headers});
         
     window.location.reload();
       } catch (error) {

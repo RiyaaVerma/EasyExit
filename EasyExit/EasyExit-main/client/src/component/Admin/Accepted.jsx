@@ -12,7 +12,7 @@ const Accepted = () => {
           'Authorization': `Bearer ${localStorage.getItem("token")}`,
           'Content-Type': 'application/json',
         };
-        const data = await axios.get("http://localhost:5000/admin/accepted",{headers});
+        const data = await axios.get("https://easyexitbackend.onrender.com/admin/accepted",{headers});
         setAcceptedPasses(data.data.data);
         console.log(data.data.data)
       } catch (error) {

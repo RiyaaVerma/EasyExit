@@ -12,7 +12,7 @@ const PastPasses = () => {
           'Authorization': localStorage.getItem("token"),
           'Content-Type': 'application/json',
         };
-        const data = await axios.get('http://localhost:5000/student/history',{headers});
+        const data = await axios.get('https://easyexitbackend.onrender.com/student/history',{headers});
         setPastPasses(data.data.data);
       } catch (error) {
         console.error('Error fetching accepted passes:', error);

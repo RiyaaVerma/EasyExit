@@ -36,7 +36,7 @@ const LoginSignup = () => {
                     role:role,
                     name:name
                 };
-                const url = "http://localhost:5000/signup";
+                const url = "https://easyexitbackend.onrender.com/signup";
                 const response = await axios.post(url, body);
                 console.log(response)
                 if (response.data.status!="Inserted") {
@@ -63,7 +63,7 @@ const LoginSignup = () => {
                 role:role
             };
             console.log(body)
-            const url = "http://localhost:5000/login";
+            const url = "https://easyexitbackend.onrender.com/login";
             console.log(url)
             const response = await axios.post(url, body);
             console.log("FULL RESPONSE:", response.data);

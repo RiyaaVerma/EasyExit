@@ -109,7 +109,7 @@ const Status = () => {
         };
 
         // We renamed 'data' to 'response' to avoid confusion with the inner '.data'
-        const response = await axios.get('http://localhost:5000/student/status', { headers });
+        const response = await axios.get('https://easyexitbackend.onrender.com/student/status', { headers });
         
         // FIX: Use setPass (which you defined at the top) and access the correct data path
         if (response.data.data) {
